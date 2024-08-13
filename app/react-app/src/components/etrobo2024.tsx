@@ -25,7 +25,7 @@ const RunLogChart: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get<{ runLog: RunLogData[] }>(`http://133.54.33.97:8000/run-log?latest=${latestK}`);
+        const response = await axios.get<{ runLog: RunLogData[] }>(`${process.env.REACT_APP_API_URL}/run-log?latest=${latestK}`);
         setRunLogData(response.data.runLog);
         setHasData(true);
       } catch (error) {
