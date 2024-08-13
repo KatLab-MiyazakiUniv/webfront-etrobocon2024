@@ -8,16 +8,26 @@ ETロボコン グラフ可視化ツールのフロントです。
 ## 起動方法
 1. Dockerを起動する
 1. このプロジェクトを以下のコマンドでクローン
-```git clone https://github.com/KatLab-MiyazakiUniv/webfront-etrobocon2024```
+```
+$ git clone https://github.com/KatLab-MiyazakiUniv/webfront-etrobocon2024
+```
 1. プロジェクトの直下に移動する
-```cd webfront-etrobocon2024```
+```
+$ cd webfront-etrobocon2024
+```
 1. dockerイメージを以下のコマンドで作成
-```docker-compose build```
+```
+$ docker-compose build
+```
 1. dockerコンテナを以下のコマンドで起動
-```docker-compose up -d```
+```
+$ docker-compose up -d
+```
 1. ブラウザを起動して、```http://localhost:3000```にアクセスすればサイトを確認できます。
 1. 以下のコマンドでdockerコンテナの停止
-```docker-compose down```
+```
+$ docker-compose down
+```
 
 ## 準備
 上記に示したバックエンドサーバーを起動し、出力されたURLの情報を```app/react-app/.env```ファイルに記入し、dockerコンテナを再起動。

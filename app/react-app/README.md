@@ -25,3 +25,4 @@
     - LatestSelector.tsx: LatestSelectorのスタイルを定義したCSS
     - RunLogChart.tsx: 走行ログのグラフ表示に関するメインコンポーネント
     - types.ts: 型定義ファイル
+- .env バックエンドのURL設定用のファイル
