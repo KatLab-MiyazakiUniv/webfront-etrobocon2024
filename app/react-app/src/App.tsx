@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Etrobo2024 from './components/etrobo2024'
+import RunLogChart from './components/RunLogChart'
 
 function App() {
   return (
@@ -9,14 +9,16 @@ function App() {
         <p>ETロボコン2024 走行ログ可視化ツール</p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/KatLab-MiyazakiUniv/webfront-etrobocon2024"
           target="_blank"
           rel="noopener noreferrer"
         >
           ソースコードはこちら
         </a>
       </header>
-      <Etrobo2024 />
+      <div style={{ padding: '5% 5%' }}>
+        <RunLogChart />
+      </div>
     </div>
   );
 }

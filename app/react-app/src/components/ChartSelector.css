@@ -1,0 +1,55 @@
+.chart-selector-container {
+    padding: 2vh 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .hidden-checkbox {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clippath: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .styled-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #20bed9;
+    border-radius: 3px;
+    transition: all 150ms;
+    margin-right: 8px;
+  }
+  
+  .styled-checkbox.checked {
+    background: #20bed9;
+  }
+  
+  .check-icon {
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+    visibility: hidden;
+  }
+  
+  .styled-checkbox.checked .check-icon {
+    visibility: visible;
+  }
